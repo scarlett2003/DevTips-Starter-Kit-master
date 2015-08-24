@@ -462,6 +462,20 @@ input[type="button"]:focus {
   left: 0;
 }
 
+.home-cta {
+  font-size: 28px;
+  display: block;
+  background: white;
+  text-align: center;
+  padding: 0.4em 0;
+  line-height: 1.25;
+  transition: all 0.15s ease-in-out;
+}
+
+.home-cta:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
 .home-wrap header {
   width: 135px;
   background: white;
@@ -638,6 +652,17 @@ section.about .home-lead {
   }
 }
 
+section.youtube {
+  background-image: url(../img/youtube-bg.gif);
+  background-position: center;
+  background-size: cover;
+  color: #fff;
+}
+
+section.youtube .home-cta {
+  color: #e20a0a;
+}
+
 body {
   background-color: #ddd;
   overflow-x: hidden;
@@ -776,4 +801,14 @@ body {
 .home-lead {
   font-size: 36px;
   line-height: 1.1;
+}
+
+.home-lead.outdented {
+  text-indent: -0.75em;
+}
+
+@media (max-width: 640px) {
+  .home-lead.outdented {
+    text-indent: 0;
+  }
 }
